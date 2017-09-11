@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+  </head>
+  <body>
+    <div class="mx-auto" style="width: 500px;">
+      <h1>CryptoCurrency Dashboard</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center bottom-air">
+        <div class="col-sm-12 col-md-8">
+          <div id="chart_div" style="width: 100%; height: 500px;"></div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card-header">
+              Calculator
+            </div>
+            <div class="card-body">
+              <form id="currencyCalculator">
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0">
+                  </div>                
+                  <div class="col-sm-6">
+                    <select id="cryptoCurr" class="form-control form-control-lg">
+                      <option value="BTC">BTC</option>
+                      <option value="ETH">ETH</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">                
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0">
+                  </div>                
+                  <div class="col-sm-6">
+                    <select id="realCurr" class="form-control form-control-lg">
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center bottom-air">
+        <div class="col-md-6 d-flex justify-content-center btc-exchange"><h2>1 BTC = 0 USD</h2></div>
+        <div class="col-md-6 d-flex justify-content-center eth-exchage"><h2>1 ETH = 0 USD</h2></div>
+      </div>
+
+      <div class="row justify-content-md-center bottom-air">
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-header">
+              Bitcoin - BTC
+            </div>
+            <div class="card-body">
+              <table class="table" id="btcTable">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>USD</th>
+                    <th>EUR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-header">
+              Etherium - ETH
+            </div>
+            <div class="card-body">
+              <table class="table" id="ethTable">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>USD</th>
+                    <th>EUR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
